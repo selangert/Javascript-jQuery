@@ -1,0 +1,19 @@
+#wrapper{
+	width: 1000px;
+	margin: 0 auto;
+}
+button{
+	width: 50px;
+	margin-left: 450px;
+	margin-right: 450px;
+}
+#grid {
+	overflow: auto;
+	margin: auto;
+	width: 1000px;
+}
+.squares {
+	background-color: black;
+	display: inline-block;
+	border: 1px solid white;
+}
