@@ -18,7 +18,16 @@ var setGrid = function(){
         	unit.appendTo('#grid');
    		}
    	}
-   	$(".squares").on('mouseover', function(){
-		$(this).css('background-color', 'blue');
+
+   	$(".squares").one('mouseover', function(){
+		$(this).css('background-color', getRandomColor());
 	});	
 };
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
